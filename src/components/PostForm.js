@@ -3,12 +3,14 @@ import {connect} from 'react-redux';
 
 class PostForm extends Component {
 
+   prevId = 0;
+
   handleSubmit = (event) => {
     event.preventDefault();
     const title = this.getTitle.value;
     const message = this.getMessage.value;
     const data = {
-      id:1,
+      id: this.prevId++,
       title,
       message
     }

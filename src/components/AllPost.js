@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import Post from './Post'
 
 class AllPost extends Component{
   render(){
@@ -6,7 +8,10 @@ class AllPost extends Component{
       <div>
         <h3>All Posts</h3>
         <ul>
-          <li>
+          <li>{console.log(this.props.posts)}
+            {this.props.posts.map(post => (
+              <Post key={post.id} post={post}/>
+            ))}
           </li>
         </ul>
       </div>
