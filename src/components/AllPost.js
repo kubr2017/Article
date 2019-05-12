@@ -14,4 +14,9 @@ class AllPost extends Component{
   }
 }
 
-export default AllPost;
+const mapStateToProps = (state) => {
+    return {
+        posts: state
+    }
+}
+export default connect(mapStateToProps)(AllPost);
