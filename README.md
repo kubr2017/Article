@@ -1,3 +1,15 @@
+# About project
+
+This is project 'Article' create  in lerning purpose of Redux and inspired  from [Blog](https://findout.club/react-redux-simple-example/).
+
+In general it's just a few React component that communicate each other through Redux.
+
+User can type title,message and press button. Message will appear in bottom.
+
+For testing aplication neccessary web server in user desktop. Details follow bellow.
+
+# Prepare project
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
